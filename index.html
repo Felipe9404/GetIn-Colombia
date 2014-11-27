@@ -175,12 +175,13 @@
      <br> 
      <br> 
      <br> 
-             </div>
+           </div>
+           
       <div data-role="footer" data-position="fixed">
           <div data-role="navbar">
             <ul>
-               <li><a href="#tengo" class="ui-btn-active">Tengo</a></li>
-               <li><a href="#notengo">No tengo</a></li>
+               <li><a href="#tengo" class=>Tengo ruta</a></li>
+               <li><a href="#notengo">No tengo ruta</a></li>
                <li><a href="#rutasguardadas">Guardadas</a></li>
             </ul>
           </div><!-- /navbar -->
@@ -188,7 +189,7 @@
 </div>
 
 
-
+ 
 
 
 <!--Espacio de tengo un destino-->
@@ -216,18 +217,29 @@
 </ul>  
            
            </div>
+             <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                 <ul>
+                   <li><a href="#tengo"data-theme="b">Tengo ruta</a></li>
+                   <li><a href="#notengo">No tengo ruta</a></li>
+                   <li><a href="#rutasguardadas">Guardadas</a></li>
+                </ul>
+                </div><!-- /navbar -->
+            </div>
 </div>
+
+
+
 
 
 <!--Espacio de ruta desde bogota-->
 
 <div data-role="page" id="desdebogota">
-
-     <div main="main" class="ui-content">
 	   <div data-role="header">
          <a href="#tengo" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all">No text</a>
           <h1>Tengo mi ruta</h1>
        </div>
+     <div main="main" class="ui-content">
        <br>
        <br>
             <center>
@@ -237,14 +249,21 @@
              <h1>Destino de ruta</h1>
              
              <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Escriba el lugar desde donde termina su ruta" data-inset="true">
-   <li><a href="#bogotacartagena">Cartagena</a></li>
+   				<li><a href="#bogotacartagena">Cartagena</a></li>
                 <li><a href="#bogotabucaramanga">Bucaramanga</a></li>
                 <li><a href="#bogotavillavicencio">Villavicencio</a></li>
                 <li><a href="#bogotacucuta">Cucuta</a></li>
-</ul>
-             
-            
-           </div>
+			</ul>
+      </div>
+  <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                 <ul>
+                   <li><a href="#tengo"data-theme="b">Tengo ruta</a></li>
+                   <li><a href="#notengo">No tengo ruta</a></li>
+                   <li><a href="#rutasguardadas">Guardadas</a></li>
+                </ul>
+                </div><!-- /navbar -->
+            </div>
 </div>
 
 
@@ -254,18 +273,14 @@
 
 <div data-role="page" id="bogotacartagena">
 
-    <div main="main" class="ui-content">
 	   <div data-role="header">
          <a href="#desdebogota" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all">No text</a>
           <h1>Ruta de Bogotá a Cartagena</h1>
        </div>
        <div role="main" class="ui-content">
-       
-      <iframe src="https://www.google.com/maps/embed?pb=!1m29!1m12!1m3!1d4050588.9180564764!2d-76.69094631936748!3d7.503479267122391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m14!1i0!3e6!4m5!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2sBogot%C3%A1%2C+Colombia!3m2!1d4.598056!2d-74.075833!4m5!1s0x8ef625e7ae9d1351%3A0xb161392e033f26ca!2sCartagena%2C+Bol%C3%ADvar%2C+Colombia!3m2!1d10.41373!2d-75.5335769!5e0!3m2!1ses!2ses!4v1416456248771" width="100%" height="450" frameborder="0" style="border:0"></iframe>
-     
-                
-           
-      </div>     
+      	<iframe src="https://www.google.com/maps/embed?pb=!1m29!1m12!1m3!1d4050588.9180564764!2d-76.69094631936748!3d7.503479267122391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m14!1i0!3e6!4m5!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2sBogot%C3%A1%2C+Colombia!3m2!1d4.598056!2d-74.075833!4m5!1s0x8ef625e7ae9d1351%3A0xb161392e033f26ca!2sCartagena%2C+Bol%C3%ADvar%2C+Colombia!3m2!1d10.41373!2d-75.5335769!5e0!3m2!1ses!2ses!4v1416456248771" width="100%" height="450" frameborder="0" style="border:0"></iframe>     
+      </div>  
+      <a href="#rutasguardadas" class="ui-btn">Guardar ruta</a>    
 </div>
 
 
@@ -274,7 +289,6 @@
 
 <div data-role="page" id="bogotabucaramanga">
 
-    <div main="main" class="ui-content">
 	   <div data-role="header">
          <a href="#desdebogota" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all">No text</a>
           <h1>Ruta de Bogotá a Bucaramanga</h1>
@@ -284,7 +298,8 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m29!1m12!1m3!1d2031998.5835014766!2d-74.71775237566648!3d5.891092725193663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m14!1i0!3e6!4m5!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2sBogot%C3%A1%2C+Colombia!3m2!1d4.598056!2d-74.075833!4m5!1s0x8e683fda558d8aff%3A0xf045f9d162638e0a!2sBucaramanga%2C+Santander%2C+Colombia!3m2!1d7.113309999999999!2d-73.120468!5e0!3m2!1ses!2ses!4v1416457007364" width="100%" height="450" frameborder="0" style="border:0"></iframe>
              
            
-      </div>     
+      </div> 
+            <a href="#rutasguardadas" class="ui-btn">Guardar ruta</a>     
 </div>
 
 
@@ -294,7 +309,6 @@
 
 <div data-role="page" id="bogotavillavicencio">
 
-    <div main="main" class="ui-content">
 	   <div data-role="header">
          <a href="#desdebogota" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all">No text</a>
           <h1>Ruta de Bogotá a Villavicencio</h1>
@@ -304,7 +318,8 @@
      <iframe src="https://www.google.com/maps/embed?pb=!1m29!1m12!1m3!1d509216.2838146035!2d-74.17533677937566!3d4.363747061311785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m14!1i0!3e6!4m5!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2sBogot%C3%A1%2C+Colombia!3m2!1d4.598056!2d-74.075833!4m5!1s0x8e3e2de56e1fe3f7%3A0x3c34db3688822eac!2sVillavicencio%2C+Meta%2C+Colombia!3m2!1d4.1499999999999995!2d-73.633333!5e0!3m2!1ses!2ses!4v1416457224410" width="100%" height="450" frameborder="0" style="border:0"></iframe>
              
            
-      </div>     
+      </div>   
+            <a href="#rutasguardadas" class="ui-btn">Guardar ruta</a>   
 </div>
 
 
@@ -314,7 +329,6 @@
 
 <div data-role="page" id="bogotacucuta">
 
-    <div main="main" class="ui-content">
 	   <div data-role="header">
          <a href="#desdebogota" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all">No text</a>
           <h1>Ruta de Bogotá a Cucuta</h1>
@@ -323,7 +337,8 @@
        
      <iframe src="https://www.google.com/maps/embed?pb=!1m29!1m12!1m3!1d2030654.896939555!2d-74.46168676462923!3d6.247538640952648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m14!1i0!3e6!4m5!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2sBogot%C3%A1%2C+Colombia!3m2!1d4.598056!2d-74.075833!4m5!1s0x8e6658610c94c5b1%3A0x391041bbc8afbc3a!2sC%C3%BAcuta%2C+Norte+de+Santander%2C+Colombia!3m2!1d7.8941669999999995!2d-72.503889!5e0!3m2!1ses!2ses!4v1416457309517" width="100%" height="450" frameborder="0" style="border:0"></iframe>
            
-      </div>     
+      </div>   
+            <a href="#rutasguardadas" class="ui-btn">Guardar ruta</a>   
 </div>
 
 
@@ -334,11 +349,11 @@
 
 <div data-role="page" id="desdemedellin">
 
-     <div main="main" class="ui-content">
 	   <div data-role="header">
          <a href="#tengo" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all">No text</a>
           <h1>Tengo mi ruta</h1>
        </div>
+     <div main="main" class="ui-content">
        <br>
        <br>
             <center>
@@ -356,6 +371,15 @@
             
       
            </div>
+  <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                 <ul>
+                   <li><a href="#tengo"data-theme="b">Tengo ruta</a></li>
+                   <li><a href="#notengo">No tengo ruta</a></li>
+                   <li><a href="#rutasguardadas">Guardadas</a></li>
+                </ul>
+                </div><!-- /navbar -->
+            </div>           
 </div>
 
 
@@ -365,8 +389,6 @@
 
 
 <div data-role="page" id="medellincartagena">
-
-    <div main="main" class="ui-content">
 	   <div data-role="header">
          <a href="#desdemedellin" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all">No text</a>
           <h1>Ruta de Medellin a Cartagena</h1>
@@ -375,7 +397,8 @@
        
     <iframe src="https://www.google.com/maps/embed?pb=!1m29!1m12!1m3!1d4042543.78407622!2d-77.76213137832974!3d8.322993679497932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m14!1i0!3e6!4m5!1s0x8e4428ef4e52dddb%3A0x722fd6c39270ac72!2sMedell%C3%ADn%2C+Antioquia%2C+Colombia!3m2!1d6.230833!2d-75.59055599999999!4m5!1s0x8ef625e7ae9d1351%3A0xb161392e033f26ca!2sCartagena%2C+Bol%C3%ADvar%2C+Colombia!3m2!1d10.41373!2d-75.5335769!5e0!3m2!1ses!2ses!4v1416457485960" width="100%" height="450" frameborder="0" style="border:0"></iframe>
            
-      </div>     
+      </div>  
+            <a href="#rutasguardadas" class="ui-btn">Guardar ruta</a>    
 </div>
 
 
@@ -385,7 +408,6 @@
 
 <div data-role="page" id="medellinbucaramanga">
 
-    <div main="main" class="ui-content">
 	   <div data-role="header">
          <a href="#desdemedellin" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all">No text</a>
           <h1>Ruta de Medellin a Bucaramanga</h1>
@@ -394,7 +416,8 @@
        
     <iframe src="https://www.google.com/maps/embed?pb=!1m29!1m12!1m3!1d2034292.4654759534!2d-75.84835626385772!3d5.226921531160831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m14!1i0!3e6!4m5!1s0x8e4428ef4e52dddb%3A0x722fd6c39270ac72!2sMedell%C3%ADn%2C+Antioquia%2C+Colombia!3m2!1d6.230833!2d-75.59055599999999!4m5!1s0x8e3e2de56e1fe3f7%3A0x3c34db3688822eac!2sVillavicencio%2C+Meta%2C+Colombia!3m2!1d4.1499999999999995!2d-73.633333!5e0!3m2!1ses!2ses!4v1416458723819" width="100%" height="450" frameborder="0" style="border:0"></iframe>
            
-      </div>     
+      </div>  
+            <a href="#rutasguardadas" class="ui-btn">Guardar ruta</a>    
 </div>
 
 
@@ -403,7 +426,6 @@
 
 <div data-role="page" id="medellinvillavicencio">
 
-    <div main="main" class="ui-content">
 	   <div data-role="header">
          <a href="#desdemedellin" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all">No text</a>
           <h1>Ruta de Medellin a Villavicencio</h1>
@@ -412,7 +434,8 @@
        
     <iframe src="https://www.google.com/maps/embed?pb=!1m29!1m12!1m3!1d2034292.4654759534!2d-75.84835626385774!3d5.226921531160831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m14!1i0!3e6!4m5!1s0x8e4428ef4e52dddb%3A0x722fd6c39270ac72!2sMedell%C3%ADn%2C+Antioquia%2C+Colombia!3m2!1d6.230833!2d-75.59055599999999!4m5!1s0x8e3e2de56e1fe3f7%3A0x3c34db3688822eac!2sVillavicencio%2C+Meta%2C+Colombia!3m2!1d4.1499999999999995!2d-73.633333!5e0!3m2!1ses!2ses!4v1416459065334" width="100%" height="450" frameborder="0" style="border:0"></iframe>
            
-      </div>     
+      </div>   
+            <a href="#rutasguardadas" class="ui-btn">Guardar ruta</a>   
 </div>
 
 
@@ -422,7 +445,6 @@
 
 <div data-role="page" id="medellincucuta">
 
-    <div main="main" class="ui-content">
 	   <div data-role="header">
          <a href="#desdemedellin" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all">No text</a>
           <h1>Ruta de Medellin a Cucuta</h1>
@@ -431,7 +453,8 @@
        
    <iframe src="https://www.google.com/maps/embed?pb=!1m29!1m12!1m3!1d2028125.990655668!2d-75.21783056555176!3d6.86859349202891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m14!1i0!3e6!4m5!1s0x8e4428ef4e52dddb%3A0x722fd6c39270ac72!2sMedell%C3%ADn%2C+Antioquia%2C+Colombia!3m2!1d6.230833!2d-75.59055599999999!4m5!1s0x8e6658610c94c5b1%3A0x391041bbc8afbc3a!2sC%C3%BAcuta%2C+Norte+de+Santander%2C+Colombia!3m2!1d7.8941669999999995!2d-72.503889!5e0!3m2!1ses!2ses!4v1416459131340" width="100%" height="450" frameborder="0" style="border:0"></iframe>
            
-      </div>     
+      </div>   
+            <a href="#rutasguardadas" class="ui-btn">Guardar ruta</a>   
 </div>
 
 
@@ -442,11 +465,11 @@
 
 <div data-role="page" id="desdecali">
 
-     <div main="main" class="ui-content">
 	   <div data-role="header">
          <a href="#tengo" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all">No text</a>
           <h1>Tengo mi ruta</h1>
        </div>
+     <div main="main" class="ui-content">
        <br>
        <br>
             <center>
@@ -463,6 +486,15 @@
 </ul>       
            
            </div>
+  <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                 <ul>
+                   <li><a href="#tengo"data-theme="b">Tengo ruta</a></li>
+                   <li><a href="#notengo">No tengo ruta</a></li>
+                   <li><a href="#rutasguardadas">Guardadas</a></li>
+                </ul>
+                </div><!-- /navbar -->
+            </div>           
 </div>
 
 
@@ -472,7 +504,6 @@
 
 <div data-role="page" id="calicartagena">
 
-    <div main="main" class="ui-content">
 	   <div data-role="header">
          <a href="#desdecali" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all">No text</a>
           <h1>Ruta de Cali a cartagena</h1>
@@ -481,7 +512,8 @@
        
   <iframe src="https://www.google.com/maps/embed?pb=!1m29!1m12!1m3!1d8111839.350669448!2d-79.70518071212905!3d6.907451667032352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m14!1i0!3e6!4m5!1s0x8e30a643b69d2711%3A0x37dee5ad2745e3fb!2sCali%2C+Valle+del+Cauca%2C+Colombia!3m2!1d3.420556!2d-76.522222!4m5!1s0x8ef625e7ae9d1351%3A0xb161392e033f26ca!2sCartagena%2C+Bol%C3%ADvar%2C+Colombia!3m2!1d10.41373!2d-75.5335769!5e0!3m2!1ses!2ses!4v1416459403441" width="100%" height="450" frameborder="0" style="border:0"></iframe>
            
-      </div>     
+      </div>  
+            <a href="#rutasguardadas" class="ui-btn">Guardar ruta</a>    
 </div>
 
 
@@ -491,7 +523,6 @@
 
 <div data-role="page" id="calibucaramanga">
 
-    <div main="main" class="ui-content">
 	   <div data-role="header">
          <a href="#desdecali" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all">No text</a>
           <h1>Ruta de Cali a Bucaramanga</h1>
@@ -501,6 +532,7 @@
   <iframe src="https://www.google.com/maps/embed?pb=!1m29!1m12!1m3!1d4068096.1712451116!2d-77.12214876630105!3d5.301628352166969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m14!1i0!3e6!4m5!1s0x8e30a643b69d2711%3A0x37dee5ad2745e3fb!2sCali%2C+Valle+del+Cauca%2C+Colombia!3m2!1d3.420556!2d-76.522222!4m5!1s0x8e683fda558d8aff%3A0xf045f9d162638e0a!2sBucaramanga%2C+Santander%2C+Colombia!3m2!1d7.113309999999999!2d-73.120468!5e0!3m2!1ses!2ses!4v1416459485175" width="100%" height="450" frameborder="0" style="border:0"></iframe>
            
       </div>     
+            <a href="#rutasguardadas" class="ui-btn">Guardar ruta</a> 
 </div>
 
 
@@ -511,7 +543,6 @@
 
 <div data-role="page" id="calivillavicencio">
 
-    <div main="main" class="ui-content">
 	   <div data-role="header">
          <a href="#desdecali" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all">No text</a>
           <h1>Ruta de Cali a Villavicencio</h1>
@@ -520,8 +551,9 @@
        
  <iframe src="https://www.google.com/maps/embed?pb=!1m29!1m12!1m3!1d2036976.9994471595!2d-76.26012729444564!3d4.322315022761708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m14!1i0!3e6!4m5!1s0x8e30a643b69d2711%3A0x37dee5ad2745e3fb!2sCali%2C+Valle+del+Cauca%2C+Colombia!3m2!1d3.420556!2d-76.522222!4m5!1s0x8e3e2de56e1fe3f7%3A0x3c34db3688822eac!2sVillavicencio%2C+Meta%2C+Colombia!3m2!1d4.1499999999999995!2d-73.633333!5e0!3m2!1ses!2ses!4v1416459571352" width="100%" height="450" frameborder="0" style="border:0"></iframe>
            
-      </div>     
-</div>
+      </div>    
+            <a href="#rutasguardadas" class="ui-btn">Guardar ruta</a>  
+</div>   
 
 
 
@@ -530,8 +562,6 @@
 
 
 <div data-role="page" id="calicucuta">
-
-    <div main="main" class="ui-content">
 	   <div data-role="header">
          <a href="#desdecali" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all">No text</a>
           <h1>Ruta de Cali a Cucuta</h1>
@@ -541,6 +571,7 @@
 <iframe src="https://www.google.com/maps/embed?pb=!1m29!1m12!1m3!1d4065670.5494431295!2d-76.86785048829134!3d5.657848456107795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m14!1i0!3e6!4m5!1s0x8e30a643b69d2711%3A0x37dee5ad2745e3fb!2sCali%2C+Valle+del+Cauca%2C+Colombia!3m2!1d3.420556!2d-76.522222!4m5!1s0x8e6658610c94c5b1%3A0x391041bbc8afbc3a!2sC%C3%BAcuta%2C+Norte+de+Santander%2C+Colombia!3m2!1d7.8941669999999995!2d-72.503889!5e0!3m2!1ses!2ses!4v1416459644141" width="100%" height="450" frameborder="0" style="border:0"></iframe>
            
       </div>     
+            <a href="#rutasguardadas" class="ui-btn">Guardar ruta</a> 
 </div>
 
 
@@ -550,7 +581,6 @@
 
 <div data-role="page" id="notengo">
 
-    <div main="main" class="ui-content">
 	   <div data-role="header">
          <a href="#get" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all">No text</a>
           <h1>No Tengo mi ruta</h1>
@@ -598,15 +628,11 @@
                  <h3>Clima</h3>
              <p><fieldset data-role="controlgroup">
                         <input type="radio" name="radio-choice-1" id="radio-choice-11"value="choice-11">
-                        <label for="radio-choice-11">Nevado</label>
+                        <label for="radio-choice-11">Calido</label>
                         <input type="radio" name="radio-choice-1" id="radio-choice-12"value="choice-12">
-                        <label for="radio-choice-12">Paramo</label>
+                        <label for="radio-choice-12">Templado</label>
                         <input type="radio" name="radio-choice-1" id="radio-choice-13"value="choice-13">
                         <label for="radio-choice-13">Frio</label>
-                        <input type="radio" name="radio-choice-1" id="radio-choice-14"value="choice-14">
-                        <label for="radio-choice-14">Templado</label>
-                        <input type="radio" name="radio-choice-1" id="radio-choice-15"value="choice-15">
-                        <label for="radio-choice-15">Calido</label>
                 </fieldset></p>
              </div>
                  <div data-role="collapsible">
@@ -614,41 +640,61 @@
                      <p> <input type="text" name="textinput-f" id="textinput-f" placeholder="Ingrese Valor" value=""></p>
                  </div>
              </div>
-        <center><a href="#opcionesrutas" class="ui-btn ui-btn-inline">Buscar Ruta</a>       
-    </div>       
+             <a href="#opcionesrutas" class="ui-btn">Buscar Ruta</a>
+              <div data-role="footer" data-position="fixed">
+          <div data-role="navbar">
+            <ul>
+               <li><a href="#tengo">Tengo ruta</a></li>
+               <li><a href="#notengo"data-theme="b">No tengo ruta</a></li>
+               <li><a href="#rutasguardadas">Guardadas</a></li>
+            </ul>
+          </div><!-- /navbar -->
+      </div> 
+    </div>  
+    
+
 </div>
 
 
 
-<!--Espacio de opcionesde rutas-->
+<!--Espacio de opciones de rutas-->
 
 <div data-role="page" id="opcionesrutas">
-	   
-     <div main="main" class="ui-content">  
-       <div data-role="header">
+
+	   <div data-role="header">
          <a href="#notengo" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all">No text</a>
           <h1>Rutas encontradas</h1>
        </div>
-       
+     <div main="main" class="ui-content">
+       <br>
        <br>
             <center>
-            <img src="logo.png" width="114" height="168" alt="infre">
-          </center>
-       <br> 
-      
-               <fieldset data-role="controlgroup">
-                      <input type="radio" name="radio-choice-1" id="radio-choice-16"value="choice-16" checked="checked">
-                  <label for="radio-choice-16">Opción 1</label>
-                      <input type="radio" name="radio-choice-1" id="radio-choice-17"value="choice-17">
-                 <label for="radio-choice-17">Opción 2</label>
-                       <input type="radio" name="radio-choice-1" id="radio-choice-18"value="choice-18">
-                 <label for="radio-choice-18">Opción 3</label>
-                       <input type="radio" name="radio-choice-1" id="radio-choice-19"value="choice-19">
-                 <label for="radio-choice-19">Opción 4</label>
-              </fieldset> 
-              
-        <center><a href="#mapadeopcion" class="ui-btn ui-btn-inline">Elegir ruta</a>       
-     </div>      
+              <img src="logo.png" width="114" height="168" alt="infre">
+            </center>
+       <br>     
+             <h1>Elija la opción de ruta</h1>
+            
+              <ul data-role="listview">
+                  <li><a href="#bogotacartagena">Cartagena</a></li>
+                <li><a href="#bogotabucaramanga">Bucaramanga</a></li>
+                <li><a href="#bogotavillavicencio">Villavicencio</a></li>
+                <li><a href="#bogotacucuta">Cucuta</a></li>
+</ul>       
+           
+           </div>
+           
+              <div data-role="footer" data-position="fixed">
+          <div data-role="navbar">
+            <ul>
+               <li><a href="#tengo">Tengo ruta</a></li>
+               <li><a href="#notengo"data-theme="b">No tengo ruta</a></li>
+               <li><a href="#rutasguardadas">Guardadas</a></li>
+            </ul>
+          </div><!-- /navbar -->
+      </div> 
+    </div>  
+           
+           
 </div>
 
 
@@ -671,22 +717,30 @@
            <div data-role="collapsible" data-collapsed="false">
                     <h4>Última ruta</h4>
                        <ul data-role="listview">
-                       <li><a href="#mapa">Ultima ruta guardada</a></li>
+                       <li><a href="#bogotacartagena">De Bogotá a Cartagena</a></li>
                        </ul>
            </div>  
 
            <div data-role="collapsible" data-collapsed="false">
                     <h4>Rutas Guardadas</h4>
                        <ul data-role="listview">
-                         <li><a href="#mapa">Ruta 1</a></li>
-                         <li><a href="#mapa">Ruta 2</a></li>
-                         <li><a href="#mapa">Ruta 3</a></li>
-                         <li><a href="#mapa">Ruta 4</a></li>
+                         <li><a href="#bogotacucuta">De Bogota a Cucuta</a></li>
+                         <li><a href="#medellinbucaramanga">De Medellin a Bucaramanga</a></li>
+                         <li><a href="#calivillavicencio">De Cali a Villavicencio</a></li>
                        </ul>
            </div>   
-       
+                                               
       
      </div>     
+       <div data-role="footer" data-position="fixed">
+          <div data-role="navbar">
+            <ul>
+               <li><a href="#tengo">Tengo ruta</a></li>
+               <li><a href="#notengo">No tengo ruta</a></li>
+               <li><a href="#rutasguardadas"data-theme="b">Guardadas</a></li>
+            </ul>
+          </div><!-- /navbar -->
+      </div> 
 </div>
 
 
